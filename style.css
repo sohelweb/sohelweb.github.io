@@ -1,0 +1,201 @@
+*{margin:0;padding:0;}
+
+.button{
+	display:block;
+	text-decoration:none;
+	margin:200px auto;
+	
+	width:50px;
+	height:50px;
+}
+
+
+.content{
+	background:green;
+	padding:30px 30px;
+	position:relative;
+	color:green;
+	border-radius:90px;
+	overflow:hidden;
+	display:inline-block;
+	font-weight:bold;
+	text-align:center;
+	box-shadow: 1px 1px 3px #af8f8f;
+	
+	
+	-o-transition:.5s all ease;
+	-moz-transition:.5s all ease;
+	-webkit-transition:.5s all ease;
+	transition:.5s all ease;
+	z-index:5;
+}
+
+.content:hover{
+	background:none;
+	color:red;
+}
+
+
+.content:before{
+	content:"";
+	position:absolute;
+	width:50%;
+	height:100%;
+	background:url("icon/sohel-1.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:left;
+	margin-left:1.5px;
+	top:0px;
+	left:-50%;
+	
+	
+	-o-transition:.5s all ease;
+	-moz-transition:.5s all ease;
+	-webkit-transition:.5s all ease;
+	transition:.5s all ease;
+	
+	z-index:-5;
+}
+
+.button:hover .content:before{
+	left:0;
+	-o-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);
+	transform:rotate(360deg);
+	
+	border-radius:90px 0px 0px 90px;
+}
+
+.content:after{
+	content:"";
+	position:absolute;
+	width:50%;
+	height:100%;
+	background:url("icon/sohel-1.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:right;
+	margin-right:1.5px;
+	top:0px;
+	right:-50%;
+	
+	
+	-o-transition:.5s all ease;
+	-moz-transition:.5s all ease;
+	-webkit-transition:.5s all ease;
+	transition:.5s all ease;
+	
+	z-index:-5;
+}
+
+.button:hover .content:after{
+	right:0;
+	
+	-moz-transform:rotate(-360deg);
+	-o-transform:rotate(-360deg);
+	-webkit-transform:rotate(-360deg);
+	transform:rotate(-360deg);
+	
+	border-radius:0px 90px 90px 0px;
+}
+
+
+.brd{
+	border-top: 5px solid yellow;
+	border-right: 5px solid red;
+	border-bottom: 5px solid orange;
+    border-left: 5px solid blue;
+	position:relative;
+	
+	
+	
+	
+	
+	-o-animation-name: rotat;
+	-moz-animation-name: rotat;
+	-webkit-animation-name: rotat;
+	animation-name: rotat;
+	
+	-o-animation-duration: 4s;
+	-moz-animation-duration: 4s;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	
+	-o-animation-duration: 4s;
+	-moz-animation-duration: 4s;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	
+	-o-animation-delay: .1s;
+	-moz-animation-delay: .1s;
+	-webkit-animation-delay: .1s;
+	animation-delay: .1s;
+	
+	-o-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+@keyframes rotat{
+	0%{
+	color:red;
+	border-top: 5px solid yellow;
+	border-right: 5px solid red;
+	border-bottom: 5px solid orange;
+    border-left: 5px solid blue;
+
+	}
+	
+	25%{
+	color:green;
+	border-top: 5px solid blue;
+	border-right: 5px solid yellow;
+	border-bottom: 5px solid red;
+	border-left:5px solid orange;
+	
+
+	}
+	
+	50%{
+	color:red;
+	border-top: 5px solid orange;
+	border-right: 5px solid blue;
+	border-bottom: 5px solid yellow;
+    border-left: 5px solid red;
+
+	}
+	
+    75%{
+	color:green;
+	border-top: 5px solid red;
+	border-right: 5px solid orange;
+	border-bottom: 5px solid blue;
+	border-left:5px solid yellow;
+
+	}
+	
+	100%{
+	color:red;
+	border-top: 5px solid yellow;
+	border-right: 5px solid red;
+	border-bottom: 5px solid orange;
+    border-left: 5px solid blue;
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
